@@ -1,7 +1,7 @@
 FROM golang:1.8-alpine
 
-RUN apt update && apk add --no-cache ca-certificates \
-	&& apt add git
+RUN apk update && apk add --no-cache ca-certificates \
+	&& apk add git
 
 ADD entry.sh /go/ 
 
